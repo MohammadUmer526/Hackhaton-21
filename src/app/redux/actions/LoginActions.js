@@ -21,7 +21,6 @@ export const loginWithEmailAndPassword = (email, password, history) => (dispatch
       const {
         data
       } = response['data'];
-      console.log('Data:', data, response)
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('email', data.email);
       localStorage.setItem('confirmationCode', data.confirmationCode);
