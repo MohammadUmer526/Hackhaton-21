@@ -18,9 +18,9 @@ export const signUpUser = (body, history) => (dispatch) => {
    
       dispatch(success({}));
       toast.success("User has been registered");
-      setTimeout(()=>{
-        history.push('/session/signin');
-      }, 3500)
+      // setTimeout(()=>{
+      //   history.push('/session/signin');
+      // }, 3500)
     
     }).catch(err => {
       dispatch(failure(err));
