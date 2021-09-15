@@ -102,6 +102,15 @@
         <div></div>
       </div>
     </div>
+    <script>
+      if('serviceWorker' in navigator){
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./serviceWorker.js')
+          .then((reg)=> {})
+          .catch((err) =>{})
+        })
+      }
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
